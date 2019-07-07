@@ -1,0 +1,89 @@
+
+body {
+    margin:0px;
+}
+.sidenav {
+  float: left;
+  height: 100%;
+  width: 200px;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  border-right: 1px solid;
+
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-size: 20px;
+}
+
+.sidenav h2 {
+    font-size: 30px;
+    margin: 25px 10px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.items {
+  position: absolute;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+header {
+    background-color: #333;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    position: absolute;
+    display: inline;
+    font-size: 30px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+}
+.header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.login {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    float: right;
+    width: 60px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    text-align: center;
+}
+.login a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+ul h2 {
+    padding: 0;
+    margin: 0;
+}

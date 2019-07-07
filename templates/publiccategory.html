@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "publicheader.html" %}
+    <div class="main">
+        {% with categories=categories %}
+            {% include "sidenav.html" %}
+        {% endwith %}
+        <div class="items">
+            <h2> Latest items </h2>
+            {% for item in latest %}
+                <ul> <a href="{{url_for('showDescription', category_name=item.Category.name, title=item.Item.title)}}"> {{ item.Item.title }}</a> </ul>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

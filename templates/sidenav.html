@@ -1,0 +1,8 @@
+<div class="sidenav left">
+    <ul>
+    <h2> Categories </h2>
+    {% for category in categories %}
+        <a href="/catalog/{{category.name}}/items"> {{category.name}}</a>
+    {% endfor %}
+    </ul>
+</div>

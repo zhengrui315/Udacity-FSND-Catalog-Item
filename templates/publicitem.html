@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "publicheader.html" %}
+    <div class="main">
+        {% include "sidenav.html" %}
+        <div class="items">
+            <h2> {{ category_name }} Items ({{count}} items) </h2>
+            {% for item in items %}
+                <ul> <a href="/catalog/{{category_name}}/{{item.title}}">{{ item.title }}</a> </ul>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

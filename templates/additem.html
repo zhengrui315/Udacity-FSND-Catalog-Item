@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "header.html" %}
+    <div class="main">
+        <h2> Edit Item </h2>
+        <form method="post">
+            Title <br>
+            <input type="text" name="title" value="{{title}}">
+            <br>
+            Description <br>
+            <input type="text" name="description">
+            <br>
+            Category <br>
+            <select name="category_name">
+                {% for category in categories %}
+                <option value="{{category.name}}"> {{category.name}} </option>
+                {% endfor %}
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock %}

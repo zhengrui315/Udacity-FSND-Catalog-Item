@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "header.html" %}
+    <div class="main">
+        {% include "sidenav.html" %}
+        <div class="items">
+            <h2> {{ category_name }} Items ({{count}} items) </h2>
+            {% for item in items %}
+                <ul> <a href="{{url_for('showDescription',category_name=category_name, title=item.title)}}">{{ item.title }}</a> </ul>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

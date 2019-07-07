@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "publicheader.html" %}
+    <div class="main">
+        <h2> {{ title }} </h2>
+        <p> Description:  {{description}} </p>
+        <a href="/catalog/{{title}}/edit"> Edit </a>
+        &nbsp | &nbsp
+        <a href="/catalog/{{title}}/delete"> Delete </a>
+    </div>
+{% endblock %}
